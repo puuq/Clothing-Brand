@@ -3,13 +3,14 @@
 import React, { useContext, useState, useEffect } from 'react';
 import { ShopContext } from '../context/ShopContext';
 import Title from './Title';
+import ProductItem from './ProductItem';
 
 const LatestCollection = () => {
   const { products } = useContext(ShopContext);
   const [latestProducts, setLatestProducts] = useState([]);
 
   useEffect(() => {
-    setLatestProducts(products.slice(0, 10));
+    setLatestProducts(products.slice(0, 10)); // Get the first 10 products
   }, [products]);
 
   return (
@@ -20,17 +21,17 @@ const LatestCollection = () => {
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
         </p>
       </div>
-      
-        {/* Rendering Products  */}
-        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6'>
-          {latestProducts.map((product, index) => (
-            <div key={index} className='p-4 border rounded shadow'>
-              <h3 className='text-xl font-semibold'>{product.name}</h3>
-              <p className='text-gray-600'>{product.description}</p>
-            </div>
-          ))}
-        </div>
-
+      {/* Rendering Products */}
+      <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 gap-y-6'>
+        {latestProducts.map((item, index) => (
+          <ProductItem
+            key={index}
+            id={item.id}
+            image={item.image}
+            name={item.name}
+          />
+        ))}
+      </div>
     </div>
   );
 };
