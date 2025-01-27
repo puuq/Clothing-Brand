@@ -8,7 +8,7 @@ const Footer = () => {
             <div>
                 <img src={assets.logo} className='mb-5 w-32' alt="" />
                 <p className='w-full md:w-2/3 text-gray-600'>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, quo quod laboriosam consectetur vero eius fuga facere voluptates voluptatibus tenetur in unde deleniti aut. Aut ex quo exercitationem id totam.
+                Experience the perfect blend of style and comfort with Gorkha Streetwears, crafted for the modern trendsetter.
                     </p>
             </div>
 
