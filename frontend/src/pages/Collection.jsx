@@ -32,12 +32,32 @@ const Collection = () => {
       setSubCategory(prev => [...prev, e.target.value]);    
   }}
 
+  const applyFilter = () => {
+
+    let productsCopy = products.slice();
+
+    if (category.length > 0) {
+      productsCopy = productsCopy.filter(item => category.includes(item.category));
+    }
+
+    if (subCategory.length > 0) {
+      productsCopy = productsCopy.filter(item => subCategory.includes(item.subCategory));
+    }
+
+    setFilterProducts(productsCopy);
+
+  }
+
   useEffect(() => {
     setFilterProducts(products);
   }, [])
 
   useEffect(() => {
     console.log(category,subCategory);
+  },[category,subCategory])
+
+  useEffect(() => {
+    applyFilter();
   },[category,subCategory])
 
   return (
