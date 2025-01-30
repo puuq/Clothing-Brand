@@ -53,6 +53,10 @@ import p_img49 from './p_img49.png'
 import p_img50 from './p_img50.png'
 import p_img51 from './p_img51.png'
 import p_img52 from './p_img52.png'
+import p_img53 from './p_img53.png'
+import p_img54 from './p_img54.png'
+import p_img55 from './p_img55.png'
+import p_img56 from './p_img56.png'
 
 
 import logo from './logo.png'
@@ -142,7 +146,7 @@ export const products = [
         subCategory: "Topwear",
         sizes: ["S", "M", "XXL"],
         date: 1716621345448,
-        bestseller: true
+        bestseller: false
     },
     {
         _id: "aaaae",
@@ -154,7 +158,7 @@ export const products = [
         subCategory: "Topwear",
         sizes: ["M", "L", "XL"],
         date: 1716622345448,
-        bestseller: true
+        bestseller: false
     },
     {
         _id: "aaaaf",
@@ -715,6 +719,55 @@ export const products = [
         image: [p_img52],
         category: "Men",
         subCategory: "Winterwear",
+        sizes: ["S", "M", "L", "XL"],
+        date: 1716668445448,
+        bestseller: false
+    },
+    // new items added
+    {
+        _id: "jewels",
+        name: "Very nice jewellery",
+        description: "A precious stone jwellery made for beauty.",
+        price: 35000,
+        image: [p_img53],
+        category: "Accessories",
+        // subCategory: "Winterwear",
+        sizes: ["S", "M", "L", "XL"],
+        date: 1716668445448,
+        bestseller: true
+    },
+    {
+        _id: "jwewlw",
+        name: "Luxurious ruby necklace",
+        description: "Necklace made of rubies and gold.",
+        price: 45999,
+        image: [p_img54],
+        category: "Accessories",
+        // subCategory: "Winterwear",
+        sizes: ["S", "M", "L", "XL"],
+        date: 1716668445448,
+        bestseller: true
+    },
+    {
+        _id: "unders",
+        name: "Tight undergarment",
+        description: "A tight undergarment for outdoor activities.",
+        price: 3500,
+        image: [p_img55],
+        category: "Women",
+        subCategory: "Undergarments",
+        sizes: ["S", "M", "L", "XL"],
+        date: 1716668445448,
+        bestseller: false
+    },
+    {
+        _id: "garme",
+        name: "Gym and sports fit garment",
+        description: "A garment for gym and sports activities.",
+        price: 3500,
+        image: [p_img56],
+        category: "Women",
+        subCategory: "Undergarments",
         sizes: ["S", "M", "L", "XL"],
         date: 1716668445448,
         bestseller: false
